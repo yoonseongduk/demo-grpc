@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: master-pod
+  labels:
+    app: master-app
+spec:
+  containers:
+  - name: master-container
+    image: yoonseongduk/master:latest
+    ports:
+    - containerPort: 50051
