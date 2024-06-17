@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service MasterService {
+  rpc GetResponse (MasterRequest) returns (MasterResponse);
+}
+
+message MasterRequest {
+  string message = 1;
+}
+
+message MasterResponse {
+  string message = 1;
+}
